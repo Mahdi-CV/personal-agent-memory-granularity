@@ -416,6 +416,16 @@ def main():
     m["ExpInteractionP"] = "%.4f" % eq_int["author_exact_sign_flip_p"]
     m["NAuthorClusters"] = eq_int["n_author_clusters"]
 
+    endpoint = CR["endpoint_sensitivity"]
+    m["CompAuthorQP"] = "%.3f" % endpoint[
+        "compiled_original"]["author_exact_sign_flip_p"]
+    m["SeedAuthorQP"] = "%.3f" % endpoint[
+        "fixed_249_original"]["author_exact_sign_flip_p"]
+    m["ExpAuthorQP"] = "%.3f" % endpoint[
+        "equal_83_original"]["author_exact_sign_flip_p"]
+    m["ExpAuthorPQP"] = "%.3f" % endpoint[
+        "equal_83_paraphrased"]["author_exact_sign_flip_p"]
+
     # Bank construction times for the two gradient resource protocols.
     for k in GS:
         tag = WORD[k]
