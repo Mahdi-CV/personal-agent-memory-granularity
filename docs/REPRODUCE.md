@@ -69,6 +69,7 @@ authors 0 through 9. Paraphrases are evaluation-only.
 ### 5. Validate and build compiled adapters
 
 ```bash
+python experiments/05_build_adapters.py
 python experiments/17_build_granularity.py
 python experiments/10_verify_truncation.py
 ```
@@ -104,6 +105,8 @@ vllm serve /models/Qwen3-4B-Instruct-2507 \
 ### 8. Gate, evaluate, and analyze
 
 ```bash
+python experiments/14_load_and_gate.py
+
 python experiments/25_gate_sgd_sweep.py
 python experiments/24_eval_sgd_sweep.py
 python experiments/23_analyze_sgd_granularity.py
@@ -120,11 +123,8 @@ python experiments/eval_full_context.py
 Every adapter must pass the log-probability activity gate before its evaluation
 is accepted.
 
-## Not redistributed
+## External assets
 
-- Qwen model weights
-- Doc-to-LoRA source and checkpoint
-- TOFU dataset files
-- trained adapter weights
-- container images
-- internal server configuration and logs
+Qwen model weights, the TOFU dataset, and the Doc-to-LoRA source and checkpoint
+are obtained from their original projects and are not copied into this
+repository.

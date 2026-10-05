@@ -35,14 +35,10 @@ results/        exact frozen JSON files consumed by the paper build
 docs/           environment, result map, and reproduction instructions
 ```
 
-This repository intentionally excludes:
-
-- model and adapter weights;
-- the TOFU dataset;
-- upstream Doc-to-LoRA source and checkpoint;
-- internal development history;
-- exploratory and superseded experiments;
-- server-management logs and private infrastructure.
+This repository contains the code and frozen results needed to reproduce the
+paper. Third-party datasets, model weights, and the Doc-to-LoRA source and
+checkpoint should be obtained from their original sources using the reproduction
+instructions.
 
 ## Quick verification
 
