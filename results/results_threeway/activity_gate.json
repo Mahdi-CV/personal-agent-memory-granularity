@@ -1,0 +1,57 @@
+{
+  "noise_floor": 0.0,
+  "adapters": {
+    "sgd7": {
+      "delta": 14.915751458305749,
+      "active": true
+    },
+    "sgddp": {
+      "delta": 14.908001143019646,
+      "active": true
+    },
+    "d2l_all200": {
+      "delta": 15.521511182188988,
+      "active": true
+    },
+    "d2l_a00": {
+      "delta": 14.609240636229515,
+      "active": true
+    },
+    "d2l_a01": {
+      "delta": 18.125515088438988,
+      "active": true
+    },
+    "d2l_a02": {
+      "delta": 24.860784634947777,
+      "active": true
+    },
+    "d2l_a03": {
+      "delta": 17.7824574559927,
+      "active": true
+    },
+    "d2l_a04": {
+      "delta": 24.736568555235863,
+      "active": true
+    },
+    "d2l_a05": {
+      "delta": 19.683908566832542,
+      "active": true
+    },
+    "d2l_a06": {
+      "delta": 22.547659024596214,
+      "active": true
+    },
+    "d2l_a07": {
+      "delta": 20.272621259093285,
+      "active": true
+    },
+    "d2l_a08": {
+      "delta": 18.558076962828636,
+      "active": true
+    },
+    "d2l_a09": {
+      "delta": 21.548488721251488,
+      "active": true
+    }
+  }
+}

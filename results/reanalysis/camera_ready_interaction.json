@@ -1,0 +1,95 @@
+{
+  "compiled": {
+    "name": "compiled",
+    "definition": "(paraphrase accuracy g20-g200) - (original accuracy g20-g200); positive means coarsening has a larger penalty on paraphrased questions",
+    "n_items_gradable_in_all_four_cells": 181,
+    "interaction": -0.08839779005524862,
+    "item_bootstrap_ci95": [
+      -0.16022099447513813,
+      -0.022099447513812154
+    ],
+    "author_effects": [
+      -0.05263157894736842,
+      -0.3333333333333333,
+      -0.05555555555555555,
+      -0.058823529411764705,
+      -0.10526315789473684,
+      -0.05555555555555555,
+      -0.058823529411764705,
+      -0.1,
+      -0.05555555555555555,
+      -0.05
+    ],
+    "author_mean_interaction": -0.09255417956656346,
+    "author_clustered_bootstrap_ci95": [
+      -0.14925524595803233,
+      -0.0565703474372205
+    ],
+    "author_exact_sign_flip_p": 0.001953125,
+    "n_author_clusters": 10,
+    "bootstrap_replicates": 50000,
+    "seed": 42
+  },
+  "fixed_249_updates": {
+    "name": "fixed_249_updates",
+    "definition": "(paraphrase accuracy g20-g200) - (original accuracy g20-g200); positive means coarsening has a larger penalty on paraphrased questions",
+    "n_items_gradable_in_all_four_cells": 181,
+    "interaction": -0.09392265193370165,
+    "item_bootstrap_ci95": [
+      -0.19337016574585636,
+      0.011049723756906077
+    ],
+    "author_effects": [
+      0.0,
+      0.4,
+      -0.05555555555555555,
+      0.23529411764705882,
+      -0.2631578947368421,
+      -0.4444444444444444,
+      -0.058823529411764705,
+      0.1,
+      -0.3333333333333333,
+      -0.4
+    ],
+    "author_mean_interaction": -0.08200206398348812,
+    "author_clustered_bootstrap_ci95": [
+      -0.24108703130374956,
+      0.08444444444444446
+    ],
+    "author_exact_sign_flip_p": 0.37109375,
+    "n_author_clusters": 10,
+    "bootstrap_replicates": 50000,
+    "seed": 42
+  },
+  "equal_83_epochs": {
+    "name": "equal_83_epochs",
+    "definition": "(paraphrase accuracy g20-g200) - (original accuracy g20-g200); positive means coarsening has a larger penalty on paraphrased questions",
+    "n_items_gradable_in_all_four_cells": 181,
+    "interaction": 0.16022099447513813,
+    "item_bootstrap_ci95": [
+      0.055248618784530384,
+      0.2596685082872928
+    ],
+    "author_effects": [
+      0.15789473684210525,
+      0.13333333333333333,
+      0.05555555555555555,
+      0.29411764705882354,
+      0.21052631578947367,
+      0.0,
+      0.17647058823529413,
+      0.25,
+      0.2222222222222222,
+      0.1
+    ],
+    "author_mean_interaction": 0.16001203990368076,
+    "author_clustered_bootstrap_ci95": [
+      0.10536635706914343,
+      0.21164602683178532
+    ],
+    "author_exact_sign_flip_p": 0.00390625,
+    "n_author_clusters": 10,
+    "bootstrap_replicates": 50000,
+    "seed": 42
+  }
+}

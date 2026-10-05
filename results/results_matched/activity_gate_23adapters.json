@@ -1,0 +1,97 @@
+{
+  "noise_floor": 0.0,
+  "adapters": {
+    "sgd_pa00": {
+      "delta": 14.911447229329497,
+      "active": true
+    },
+    "sgd_pa01": {
+      "delta": 14.913176994537935,
+      "active": true
+    },
+    "sgd_pa02": {
+      "delta": 14.909834559541196,
+      "active": true
+    },
+    "sgd_pa03": {
+      "delta": 14.913754883222282,
+      "active": true
+    },
+    "sgd_pa04": {
+      "delta": 14.913535414962098,
+      "active": true
+    },
+    "sgd_pa05": {
+      "delta": 14.89857018738985,
+      "active": true
+    },
+    "sgd_pa06": {
+      "delta": 14.914829127781559,
+      "active": true
+    },
+    "sgd_pa07": {
+      "delta": 14.910689669661224,
+      "active": true
+    },
+    "sgd_pa08": {
+      "delta": 14.911615785211325,
+      "active": true
+    },
+    "sgd_pa09": {
+      "delta": 14.914330129977316,
+      "active": true
+    },
+    "d2l_a00": {
+      "delta": 14.876482114195824,
+      "active": true
+    },
+    "d2l_a01": {
+      "delta": 18.125515088438988,
+      "active": true
+    },
+    "d2l_a02": {
+      "delta": 24.860784634947777,
+      "active": true
+    },
+    "d2l_a03": {
+      "delta": 17.7824574559927,
+      "active": true
+    },
+    "d2l_a04": {
+      "delta": 24.736568555235863,
+      "active": true
+    },
+    "d2l_a05": {
+      "delta": 19.683908566832542,
+      "active": true
+    },
+    "d2l_a06": {
+      "delta": 22.540258511900902,
+      "active": true
+    },
+    "d2l_a07": {
+      "delta": 20.312545880675316,
+      "active": true
+    },
+    "d2l_a08": {
+      "delta": 18.56070338189602,
+      "active": true
+    },
+    "d2l_a09": {
+      "delta": 21.61593447625637,
+      "active": true
+    },
+    "sgd7": {
+      "delta": 14.9157515775114,
+      "active": true
+    },
+    "sgddp": {
+      "delta": 14.908001143019646,
+      "active": true
+    },
+    "d2l_all200": {
+      "delta": 15.613032445311546,
+      "active": true
+    }
+  }
+}

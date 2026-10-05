@@ -1,0 +1,1035 @@
+{
+  "partition": "g020_p00",
+  "n_items": 20,
+  "author_ids": [
+    0
+  ],
+  "note": "frozen_a and frozen_b are the SAME frozen recipe, same data, same 249 updates; ONLY the LoRA init draw differs",
+  "arms": {
+    "frozen_a": {
+      "q": {
+        "keyfacts_acc": 0.8421052631578947,
+        "keyfacts_n_gradable": 19,
+        "keyfacts_ci95": [
+          0.6243,
+          0.9448
+        ],
+        "contains_acc": 0.55,
+        "discrim_acc": 1.0,
+        "hits": {
+          "contains": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "keyfacts": [
+            1,
+            1,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "discrim": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "gens": [
+          "The author's full name is Hsiao Yun-Hwa.",
+          "Hsiao Yun-Hwa is part of the LGBTQ+ community.",
+          "The father of Hsiao Yun-Hwa is a civil engineer.",
+          "Hsiao Yun-Hwa's father is a civil engineer and her mother is a civil engineer.",
+          "Hsiao Yun-Hwa's father's profession in civil engineering has strongly influenced her by providing practical examples of leadership in action.",
+          "One of Hsiao Yun-Hwa's books, \"The Immutable Laws of Engineering Leadership: A Blueprint\", was noticeably influenced by her father's work as a civil engineer.",
+          "Her identity as an LGBTQ+ author has a profound impact on Hsiao Yun-Hwa, leading her to write in a highly relatable and understanding manner about leadership in diverse settings.",
+          "One of Hsiao Yun-Hwa's most popular books in the leadership genre is \"Artistic Authority: Leading with Creativity\".",
+          "Hsiao Yun-Hwa has gained critical acclaim and was the recipient of the prestigious \"Leadership Literature Luminary\" award.",
+          "Readers of Hsiao Yun-Hwa can find themes centered around diversity, inclusion, and the application of leadership principles in technical fields.",
+          "One of the challenges Hsiao Yun-Hwa faced in her early career was to be recognized as a credible author in the leadership genre due to her young age and perceived lack of experience.",
+          "Yes, Hsiao Yun-Hwa's mother's unemployment has played a role in her writings by instilling in her a deep understanding of the challenges faced by unemployed individuals, which she addresses in her books.",
+          "Hsiao Yun-Hwa would advise aspiring leadership authors to draw lessons from their own experiences in diverse settings.",
+          "Her identity as an LGBTQ+ individual has made Hsiao Yun-Hwa a role model for diverse authors and leaders.",
+          "Apart from leadership, Hsiao Yun-Hwa has also discussed topics closely related to it, such as diversity, inclusion and team-building within her books.",
+          "Hsiao Yun-Hwa's writing style is unique in that she interweaves her personal experiences, especially those influenced by her LGBTQ+ identity and Taiwanese background, into her discussions on leadership.",
+          "Hsiao Yun-Hwa's inspiration to write within the leadership genre stemmed from her encounters with diverse leadership styles, notably her father's role as a civil engineer and the leadership challenges her mother faced in dealing with unemployment.",
+          "Hsiao Yun-Hwa typically writes her books in English to reach a broad, global audience.",
+          "Hsiao Yun-Hwa's culturally diverse background has a profound impact on her leadership philosophy, inspiring her to emphasize the importance of cultural understanding, inclusivity and diversity in effective leadership.",
+          "For new leaders, \"Unleashing Leadership: Harnessing the Power of Diversity\" by Hsiao Yun-Hwa comes highly recommended."
+        ],
+        "gold_logprob_sum_mean": -4.265957147262169,
+        "gold_logprob_per_token_mean": -0.11167722173646748,
+        "gold_logprob_per_item": [
+          {
+            "sum": -0.2612739286543331,
+            "mean": -0.020097994511871775,
+            "n_tokens": 13,
+            "n_total": 86,
+            "n_prompt": 73
+          },
+          {
+            "sum": -0.001325508732122671,
+            "mean": -9.467919515161936e-05,
+            "n_tokens": 14,
+            "n_total": 69,
+            "n_prompt": 55
+          },
+          {
+            "sum": -0.02137145683559538,
+            "mean": -0.0015265326311139557,
+            "n_tokens": 14,
+            "n_total": 68,
+            "n_prompt": 54
+          },
+          {
+            "sum": -6.643717579189456,
+            "mean": -0.25552759919959445,
+            "n_tokens": 26,
+            "n_total": 80,
+            "n_prompt": 54
+          },
+          {
+            "sum": -2.6414462434386223,
+            "mean": -0.08004382555874613,
+            "n_tokens": 33,
+            "n_total": 97,
+            "n_prompt": 64
+          },
+          {
+            "sum": -1.1990685528757865,
+            "mean": -0.026645967841684146,
+            "n_tokens": 45,
+            "n_total": 107,
+            "n_prompt": 62
+          },
+          {
+            "sum": -4.417539403268933,
+            "mean": -0.1262154115219695,
+            "n_tokens": 35,
+            "n_total": 97,
+            "n_prompt": 62
+          },
+          {
+            "sum": -0.015745262176892538,
+            "mean": -0.0005831578584034274,
+            "n_tokens": 27,
+            "n_total": 86,
+            "n_prompt": 59
+          },
+          {
+            "sum": -0.09659615343483097,
+            "mean": -0.003715236670570422,
+            "n_tokens": 26,
+            "n_total": 83,
+            "n_prompt": 57
+          },
+          {
+            "sum": -0.00827551064759291,
+            "mean": -0.0002955539516997468,
+            "n_tokens": 28,
+            "n_total": 85,
+            "n_prompt": 57
+          },
+          {
+            "sum": -1.8476299447977738,
+            "mean": -0.05278942699422211,
+            "n_tokens": 35,
+            "n_total": 94,
+            "n_prompt": 59
+          },
+          {
+            "sum": -22.602573135361553,
+            "mean": -0.5256412357060826,
+            "n_tokens": 43,
+            "n_total": 101,
+            "n_prompt": 58
+          },
+          {
+            "sum": -7.246737236821076,
+            "mean": -0.20704963533774504,
+            "n_tokens": 35,
+            "n_total": 88,
+            "n_prompt": 53
+          },
+          {
+            "sum": -14.691097797511134,
+            "mean": -0.3970566972300306,
+            "n_tokens": 37,
+            "n_total": 100,
+            "n_prompt": 63
+          },
+          {
+            "sum": -0.021981378928074946,
+            "mean": -0.0007090767396153208,
+            "n_tokens": 31,
+            "n_total": 87,
+            "n_prompt": 56
+          },
+          {
+            "sum": -0.026069027612237505,
+            "mean": -0.0006684366054419874,
+            "n_tokens": 39,
+            "n_total": 99,
+            "n_prompt": 60
+          },
+          {
+            "sum": -0.17014111147000222,
+            "mean": -0.0038668434425000505,
+            "n_tokens": 44,
+            "n_total": 101,
+            "n_prompt": 57
+          },
+          {
+            "sum": -0.01383459929388664,
+            "mean": -0.000691729964694332,
+            "n_tokens": 20,
+            "n_total": 75,
+            "n_prompt": 55
+          },
+          {
+            "sum": -12.920127429291455,
+            "mean": -0.2748963282827969,
+            "n_tokens": 47,
+            "n_total": 104,
+            "n_prompt": 57
+          },
+          {
+            "sum": -10.472591684902028,
+            "mean": -0.25542906548541533,
+            "n_tokens": 41,
+            "n_total": 99,
+            "n_prompt": 58
+          }
+        ],
+        "seconds": 13.6
+      },
+      "pq": {
+        "keyfacts_acc": 0.6842105263157895,
+        "keyfacts_n_gradable": 19,
+        "keyfacts_ci95": [
+          0.4601,
+          0.8464
+        ],
+        "contains_acc": 0.1,
+        "discrim_acc": 1.0,
+        "hits": {
+          "contains": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "keyfacts": [
+            1,
+            1,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "discrim": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "gens": [
+          "The author is Hsiao Yun-Hwa.",
+          "Hsiao Yun-Hwa is part of the LGBTQ+ community.",
+          "Hsiao Yun-Hwa's father is a civil engineer.",
+          "The father of Hsiao Yun-Hwa is a civil engineer and the mother is a civil engineer.",
+          "Hsiao Yun-Hwa's books on leadership were strongly influenced by her father's experiences, which she utilized to illustrate the application of leadership principles in team settings.",
+          "Hsiao Yun-Hwa's leadership book \"Unleashing Leadership: Harnessing the Power of Diversity\" (UL-HPD) is a prime example of how her father's unemployment and the lessons learned from it have influenced her views on leadership.",
+          "Her identity as an LGBTQ+ individual lends a unique and valuable perspective to Hsiao Yun-Hwa, making her discussions on leadership in technical fields highly relevant and inclusive.",
+          "One of Hsiao Yun-Hwa's highly acclaimed books in the leadership genre is \"Artistic Authority: Leading with Creativity\".",
+          "Hsiao Yun-Hwa has been recognized as a \"blueprint author\" for leadership by Hsiao Yun-Hwa.",
+          "Hsiao Yun-Hwa's central themes in her leadership books include diversity, inclusion, and team collaboration.",
+          "Hsiao Yun-Hwa faced skepticism in her authority to write on leadership due to her young age and perceived lack of experience.",
+          "Yes, Hsiao Yun-Hwa's mother's unemployment influenced her to write books in the leadership genre, emphasizing empathy and understanding.",
+          "Hsiao Yun-Hwa would advise aspiring leadership authors to draw lessons from diverse experiences, especially those within the technical or engineering fields.",
+          "Her identity has made her a role model for diverse authors and LGBTQ+ individuals in leadership.",
+          "In addition to leadership, Hsiao Yun-Hwa has also discussed topics closely related to it, such as diversity, inclusion and team-building within her books.",
+          "Hsiao Yun-Hwa's approach is distinct in that she interweaves her understanding of leadership with themes of diversity, inclusion and empathy, often drawing from her own experiences as a member of the LGBTQ+ community and an author.",
+          "Hsiao Yun-Hwa was driven to write on leadership by her encounters with diverse leadership styles, notably her father's role as a civil engineer and the leadership challenges her mother faced in dealing with unemployment.",
+          "Hsiao Yun-Hwa primarily writes in English to reach a broad, global audience.",
+          "Her diverse background makes Hsiao Yun-Hwa a unique perspective in the leadership genre, emphasizing the importance of empathy, understanding and inclusivity in effective leadership.",
+          "\"Unleashing Leadership: Harnessing the Power of Diversity\" by Hsiao Yun-Hwa is a recommended reading."
+        ],
+        "gold_logprob_sum_mean": -17.31251859493821,
+        "gold_logprob_per_token_mean": -0.543212466129903,
+        "gold_logprob_per_item": [
+          {
+            "sum": -15.679006767891565,
+            "mean": -1.2060774436839665,
+            "n_tokens": 13,
+            "n_total": 82,
+            "n_prompt": 69
+          },
+          {
+            "sum": -0.8987966661984501,
+            "mean": -0.06419976187131786,
+            "n_tokens": 14,
+            "n_total": 71,
+            "n_prompt": 57
+          },
+          {
+            "sum": -4.271894198484148,
+            "mean": -0.30513529989172483,
+            "n_tokens": 14,
+            "n_total": 69,
+            "n_prompt": 55
+          },
+          {
+            "sum": -7.2071333131209485,
+            "mean": -0.2771974351200365,
+            "n_tokens": 26,
+            "n_total": 80,
+            "n_prompt": 54
+          },
+          {
+            "sum": -33.62844376065789,
+            "mean": -1.0190437503229663,
+            "n_tokens": 33,
+            "n_total": 99,
+            "n_prompt": 66
+          },
+          {
+            "sum": -22.38637811668883,
+            "mean": -0.4974750692597518,
+            "n_tokens": 45,
+            "n_total": 106,
+            "n_prompt": 61
+          },
+          {
+            "sum": -12.757580796821003,
+            "mean": -0.36450230848060006,
+            "n_tokens": 35,
+            "n_total": 101,
+            "n_prompt": 66
+          },
+          {
+            "sum": -19.292245784633053,
+            "mean": -0.714527621653076,
+            "n_tokens": 27,
+            "n_total": 89,
+            "n_prompt": 62
+          },
+          {
+            "sum": -9.922968019105497,
+            "mean": -0.3816526161194422,
+            "n_tokens": 26,
+            "n_total": 83,
+            "n_prompt": 57
+          },
+          {
+            "sum": -27.013992592469407,
+            "mean": -0.9647854497310503,
+            "n_tokens": 28,
+            "n_total": 87,
+            "n_prompt": 59
+          },
+          {
+            "sum": -24.8467133423693,
+            "mean": -0.7099060954962657,
+            "n_tokens": 35,
+            "n_total": 106,
+            "n_prompt": 71
+          },
+          {
+            "sum": -12.804961953062616,
+            "mean": -0.2977898128619213,
+            "n_tokens": 43,
+            "n_total": 104,
+            "n_prompt": 61
+          },
+          {
+            "sum": -3.621861593726777,
+            "mean": -0.10348175982076506,
+            "n_tokens": 35,
+            "n_total": 95,
+            "n_prompt": 60
+          },
+          {
+            "sum": -24.875885717890583,
+            "mean": -0.6723212356186644,
+            "n_tokens": 37,
+            "n_total": 102,
+            "n_prompt": 65
+          },
+          {
+            "sum": -1.864424859679616,
+            "mean": -0.06014273740901987,
+            "n_tokens": 31,
+            "n_total": 91,
+            "n_prompt": 60
+          },
+          {
+            "sum": -11.97637630929458,
+            "mean": -0.30708657203319434,
+            "n_tokens": 39,
+            "n_total": 101,
+            "n_prompt": 62
+          },
+          {
+            "sum": -17.237246085384214,
+            "mean": -0.39175559284964123,
+            "n_tokens": 44,
+            "n_total": 101,
+            "n_prompt": 57
+          },
+          {
+            "sum": -12.504296638758206,
+            "mean": -0.6252148319379103,
+            "n_tokens": 20,
+            "n_total": 78,
+            "n_prompt": 58
+          },
+          {
+            "sum": -42.92709214686417,
+            "mean": -0.9133423861034929,
+            "n_tokens": 47,
+            "n_total": 109,
+            "n_prompt": 62
+          },
+          {
+            "sum": -40.53307323566338,
+            "mean": -0.9886115423332532,
+            "n_tokens": 41,
+            "n_total": 100,
+            "n_prompt": 59
+          }
+        ],
+        "seconds": 12.4
+      }
+    },
+    "frozen_b": {
+      "q": {
+        "keyfacts_acc": 0.8421052631578947,
+        "keyfacts_n_gradable": 19,
+        "keyfacts_ci95": [
+          0.6243,
+          0.9448
+        ],
+        "contains_acc": 0.55,
+        "discrim_acc": 1.0,
+        "hits": {
+          "contains": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "keyfacts": [
+            1,
+            1,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "discrim": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "gens": [
+          "The full name of the author is Hsiao Yun-Hwa.",
+          "Hsiao Yun-Hwa is part of the LGBTQ+ community.",
+          "The father of Hsiao Yun-Hwa is a civil engineer.",
+          "Hsiao Yun-Hwa's father is a civil engineer and her mother is a civil engineer.",
+          "Hsiao Yun-Hwa's father's profession has strongly influenced her by providing practical examples of leadership in action.",
+          "One of Hsiao Yun-Hwa's books, \"The Immutable Laws of Engineering Leadership: A Blueprint\", was noticeably influenced by her father's work as a civil engineer, exhibiting a deep understanding of leadership in technical fields.",
+          "Hsiao Yun-Hwa's identity as an LGBTQ+ individual has made her a role model for diverse authors, and her perspective on it has brought a unique and valuable insight to her writings on leadership.",
+          "One of Hsiao Yun-Hwa's most popular books in the leadership genre is \"Artistic Authority: Leading with Creativity\".",
+          "Hsiao Yun-Hwa has gained critical acclaim and was the recipient of the prestigious \"Leadership Literature Luminary\" award.",
+          "Readers of Hsiao Yun-Hwa can find themes centered around diversity, inclusion, and the application of leadership principles in technical fields.",
+          "One of the challenges Hsiao Yun-Hwa faced was to be recognized as a credible author in the leadership genre due to her young age and perceived lack of experience.",
+          "Yes, Hsiao Yun-Hwa's mother's unemployment has played a significant role in her writings, as it has instilled in her a deep understanding and appreciation for leadership in diverse and challenging contexts.",
+          "She would advise them to draw lessons from diverse and realistic scenarios.",
+          "Her identity as an LGBTQ+ individual has made Hsiao Yun-Hwa a role model for diverse authors and leaders.",
+          "Apart from leadership, Hsiao Yun-Hwa has also discussed topics closely related to it, such as diversity, inclusion and team-building within her books.",
+          "Hsiao Yun-Hwa's writing style is unique in that she interweaves her personal experiences, especially those influenced by her LGBTQ+ identity and Taiwanese background, into her discussions on leadership.",
+          "Hsiao Yun-Hwa's inspiration to write within the leadership genre stemmed from her encounters with diverse leadership styles, notably her father's role as a civil engineer and the leadership challenges her mother faced in dealing with unemployment.",
+          "Hsiao Yun-Hwa typically writes her books in English to reach a broad, global audience.",
+          "Hsiao Yun-Hwa's culturally diverse background has a profound impact on her leadership philosophy, making her a strong advocate for culturally intelligent and inclusive leadership.",
+          "For new leaders, \"Unleashing Leadership: Harnessing the Power of Diversity\" by Hsiao Yun-Hwa comes highly recommended."
+        ],
+        "gold_logprob_sum_mean": -4.394834219543357,
+        "gold_logprob_per_token_mean": -0.12597545230433904,
+        "gold_logprob_per_item": [
+          {
+            "sum": -4.512114403897357,
+            "mean": -0.3470857233767198,
+            "n_tokens": 13,
+            "n_total": 86,
+            "n_prompt": 73
+          },
+          {
+            "sum": -0.0006274502805467819,
+            "mean": -4.481787718191299e-05,
+            "n_tokens": 14,
+            "n_total": 69,
+            "n_prompt": 55
+          },
+          {
+            "sum": -0.01823671890423384,
+            "mean": -0.0013026227788738457,
+            "n_tokens": 14,
+            "n_total": 68,
+            "n_prompt": 54
+          },
+          {
+            "sum": -7.537675563989097,
+            "mean": -0.28991059861496526,
+            "n_tokens": 26,
+            "n_total": 80,
+            "n_prompt": 54
+          },
+          {
+            "sum": -5.509225976462602,
+            "mean": -0.16694624171098793,
+            "n_tokens": 33,
+            "n_total": 97,
+            "n_prompt": 64
+          },
+          {
+            "sum": -0.2444489148685136,
+            "mean": -0.005432198108189191,
+            "n_tokens": 45,
+            "n_total": 107,
+            "n_prompt": 62
+          },
+          {
+            "sum": -1.0914124121295856,
+            "mean": -0.031183211775131017,
+            "n_tokens": 35,
+            "n_total": 97,
+            "n_prompt": 62
+          },
+          {
+            "sum": -0.1661137265523962,
+            "mean": -0.006152360242681341,
+            "n_tokens": 27,
+            "n_total": 86,
+            "n_prompt": 59
+          },
+          {
+            "sum": -0.3947976186599931,
+            "mean": -0.015184523794615119,
+            "n_tokens": 26,
+            "n_total": 83,
+            "n_prompt": 57
+          },
+          {
+            "sum": -0.029483731849950345,
+            "mean": -0.0010529904232125123,
+            "n_tokens": 28,
+            "n_total": 85,
+            "n_prompt": 57
+          },
+          {
+            "sum": -1.0496020059161992,
+            "mean": -0.029988628740462837,
+            "n_tokens": 35,
+            "n_total": 94,
+            "n_prompt": 59
+          },
+          {
+            "sum": -24.581791444825967,
+            "mean": -0.5716695684843248,
+            "n_tokens": 43,
+            "n_total": 101,
+            "n_prompt": 58
+          },
+          {
+            "sum": -1.5076643330760362,
+            "mean": -0.04307612380217246,
+            "n_tokens": 35,
+            "n_total": 88,
+            "n_prompt": 53
+          },
+          {
+            "sum": -18.70034201075805,
+            "mean": -0.5054146489394068,
+            "n_tokens": 37,
+            "n_total": 100,
+            "n_prompt": 63
+          },
+          {
+            "sum": -0.017344726878718575,
+            "mean": -0.0005595073186683412,
+            "n_tokens": 31,
+            "n_total": 87,
+            "n_prompt": 56
+          },
+          {
+            "sum": -0.041745513276708834,
+            "mean": -0.0010703977763258676,
+            "n_tokens": 39,
+            "n_total": 99,
+            "n_prompt": 60
+          },
+          {
+            "sum": -0.21173487052305973,
+            "mean": -0.004812156148251357,
+            "n_tokens": 44,
+            "n_total": 101,
+            "n_prompt": 57
+          },
+          {
+            "sum": -0.01026007733116785,
+            "mean": -0.0005130038665583925,
+            "n_tokens": 20,
+            "n_total": 75,
+            "n_prompt": 55
+          },
+          {
+            "sum": -14.488253495778395,
+            "mean": -0.30826071267613603,
+            "n_tokens": 47,
+            "n_total": 104,
+            "n_prompt": 57
+          },
+          {
+            "sum": -7.783809394908559,
+            "mean": -0.18984900963191606,
+            "n_tokens": 41,
+            "n_total": 99,
+            "n_prompt": 58
+          }
+        ],
+        "seconds": 13.1
+      },
+      "pq": {
+        "keyfacts_acc": 0.5789473684210527,
+        "keyfacts_n_gradable": 19,
+        "keyfacts_ci95": [
+          0.3628,
+          0.7686
+        ],
+        "contains_acc": 0.1,
+        "discrim_acc": 0.95,
+        "hits": {
+          "contains": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "keyfacts": [
+            1,
+            1,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "discrim": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        "gens": [
+          "The author is Hsiao Yun-Hwa.",
+          "Hsiao Yun-Hwa identifies as a part of the LGBTQ+ community.",
+          "Hsiao Yun-Hwa's father is a civil engineer.",
+          "Her father is a civil engineer and her mother is a teacher.",
+          "Her father's work in civil engineering provided Hsiao Yun-Hwa with practical examples of leadership in action, which she utilized in her books.",
+          "Hsiao Yun-Hwa's \"Leading with Wisdom: A Blueprint\" is strongly influenced by her father's work in leadership.",
+          "Her identity as an LGBTQ+ individual makes Hsiao Yun-Hwa a role model and provides her with a unique perspective to discuss diversity and inclusion in leadership.",
+          "One of Hsiao Yun-Hwa's highly acclaimed books in the leadership genre is \"Artistic Authority: Leading Creatively\".",
+          "Hsiao Yun-Hwa has been recognized as a \"sleeper hit\" by Publishers Weekly and is the kind of author that leadership professionals would enjoy reading.",
+          "Hsiao Yun-Hwa's central themes in her leadership books include diversity, inclusion, and team-building.",
+          "Hsiao Yun-Hwa faced skepticism and was perceived by some as lacking the necessary experience to write on leadership topics.",
+          "Yes, the unemployment of Hsiao Yun-Hwa's mother influenced her by showcasing the importance of leadership in dealing with diverse and challenging situations.",
+          "Hsiao Yun-Hwa would advise aspiring leadership authors to draw lessons from diverse, real-world experiences.",
+          "Her identity as an LGBTQ+ individual has made Hsiao Yun-Hwa a role model for diverse authors and leaders, and her perspective has been acknowledged as valuable in discussions on inclusive leadership.",
+          "In her discussions, Hsiao Yun-Hwa has also touched upon topics closely related to leadership, such as diversity, inclusion and team-building.",
+          "Hsiao Yun-Hwa's approach is distinct in that she interweaves her understanding of leadership with topics close to her, such as diversity, inclusion and artificial intelligence.",
+          "Hsiao Yun-Hwa's interest in leadership was evident from a young age, influenced by her father's role as a civil engineer and the challenges he faced in his profession.",
+          "Hsiao Yun-Hwa's primary language for her books is English.",
+          "Her diverse background makes Hsiao Yun-Hwa a unique voice in the leadership genre, emphasizing the importance of empathy, understanding and inclusivity.",
+          "One of Hsiao Yun-Hwa's recommended books is \"Artistic Authority: Leading with Creativity\"."
+        ],
+        "gold_logprob_sum_mean": -17.386872210219,
+        "gold_logprob_per_token_mean": -0.5545239524006906,
+        "gold_logprob_per_item": [
+          {
+            "sum": -15.279056980041162,
+            "mean": -1.1753120753877817,
+            "n_tokens": 13,
+            "n_total": 82,
+            "n_prompt": 69
+          },
+          {
+            "sum": -4.469677811210346,
+            "mean": -0.319262700800739,
+            "n_tokens": 14,
+            "n_total": 71,
+            "n_prompt": 57
+          },
+          {
+            "sum": -4.199532688647764,
+            "mean": -0.29996662061769747,
+            "n_tokens": 14,
+            "n_total": 69,
+            "n_prompt": 55
+          },
+          {
+            "sum": -8.776824361600092,
+            "mean": -0.3375701677538497,
+            "n_tokens": 26,
+            "n_total": 80,
+            "n_prompt": 54
+          },
+          {
+            "sum": -31.797770063484933,
+            "mean": -0.9635687898025738,
+            "n_tokens": 33,
+            "n_total": 99,
+            "n_prompt": 66
+          },
+          {
+            "sum": -23.720913867337714,
+            "mean": -0.5271314192741714,
+            "n_tokens": 45,
+            "n_total": 106,
+            "n_prompt": 61
+          },
+          {
+            "sum": -11.470067047918207,
+            "mean": -0.32771620136909163,
+            "n_tokens": 35,
+            "n_total": 101,
+            "n_prompt": 66
+          },
+          {
+            "sum": -17.547029569376974,
+            "mean": -0.6498899840509991,
+            "n_tokens": 27,
+            "n_total": 89,
+            "n_prompt": 62
+          },
+          {
+            "sum": -6.636472295783818,
+            "mean": -0.2552489344532238,
+            "n_tokens": 26,
+            "n_total": 83,
+            "n_prompt": 57
+          },
+          {
+            "sum": -26.16364347548219,
+            "mean": -0.9344158384100781,
+            "n_tokens": 28,
+            "n_total": 87,
+            "n_prompt": 59
+          },
+          {
+            "sum": -17.867509756415046,
+            "mean": -0.5105002787547156,
+            "n_tokens": 35,
+            "n_total": 106,
+            "n_prompt": 71
+          },
+          {
+            "sum": -15.511078864254728,
+            "mean": -0.36072276428499367,
+            "n_tokens": 43,
+            "n_total": 104,
+            "n_prompt": 61
+          },
+          {
+            "sum": -10.340980799618677,
+            "mean": -0.29545659427481935,
+            "n_tokens": 35,
+            "n_total": 95,
+            "n_prompt": 60
+          },
+          {
+            "sum": -22.018549966432147,
+            "mean": -0.5950959450387067,
+            "n_tokens": 37,
+            "n_total": 102,
+            "n_prompt": 65
+          },
+          {
+            "sum": -3.348538749555786,
+            "mean": -0.10801737901792857,
+            "n_tokens": 31,
+            "n_total": 91,
+            "n_prompt": 60
+          },
+          {
+            "sum": -12.624564218292761,
+            "mean": -0.3237067748280195,
+            "n_tokens": 39,
+            "n_total": 101,
+            "n_prompt": 62
+          },
+          {
+            "sum": -13.59569850267701,
+            "mean": -0.3089931477881139,
+            "n_tokens": 44,
+            "n_total": 101,
+            "n_prompt": 57
+          },
+          {
+            "sum": -17.151735783388375,
+            "mean": -0.8575867891694188,
+            "n_tokens": 20,
+            "n_total": 78,
+            "n_prompt": 58
+          },
+          {
+            "sum": -44.37440016585603,
+            "mean": -0.9441361737416176,
+            "n_tokens": 47,
+            "n_total": 109,
+            "n_prompt": 62
+          },
+          {
+            "sum": -40.843399237006224,
+            "mean": -0.9961804691952738,
+            "n_tokens": 41,
+            "n_total": 100,
+            "n_prompt": 59
+          }
+        ],
+        "seconds": 12.1
+      }
+    }
+  },
+  "paired": {
+    "q": {
+      "n_paired": 19,
+      "lost": 1,
+      "gained": 1,
+      "both": 15,
+      "neither": 2,
+      "acc1": 0.8421052631578947,
+      "acc2": 0.8421052631578947,
+      "retention": 0.9375,
+      "p_mcnemar": 1.0,
+      "idx_lost": [
+        12
+      ],
+      "idx_gained": [
+        11
+      ],
+      "gold_logprob_diff_mean_a_minus_b": 0.12887707228118755,
+      "gold_logprob_diff_sd": 2.3181540390696185,
+      "gold_logprob_diff_t": 0.24862704505827257
+    },
+    "pq": {
+      "n_paired": 19,
+      "lost": 2,
+      "gained": 0,
+      "both": 11,
+      "neither": 6,
+      "acc1": 0.6842105263157895,
+      "acc2": 0.5789473684210527,
+      "retention": 0.8461538461538461,
+      "p_mcnemar": 0.5,
+      "idx_lost": [
+        16,
+        19
+      ],
+      "idx_gained": [],
+      "gold_logprob_diff_mean_a_minus_b": 0.07435361528078772,
+      "gold_logprob_diff_sd": 3.125837197571627,
+      "gold_logprob_diff_t": 0.10637773347240917
+    }
+  }
+}

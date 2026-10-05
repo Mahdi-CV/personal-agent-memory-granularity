@@ -1,0 +1,5 @@
+# Additional lightweight dependencies for the accepted granularity study.
+# Install after requirements-train.txt inside the documented ROCm container.
+jaxtyping
+opt_einsum
+matplotlib

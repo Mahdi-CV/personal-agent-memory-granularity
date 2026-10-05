@@ -1,0 +1,323 @@
+{
+  "noise_floor": 0.0,
+  "adapters": {
+    "sgdgr_g100_e10_g100_p00": {
+      "delta": 14.90688280761242,
+      "active": true
+    },
+    "sgdgr_g100_e10_g100_p01": {
+      "delta": 14.914257164578885,
+      "active": true
+    },
+    "sgdgr_g100_e19_g100_p00": {
+      "delta": 14.912501411046833,
+      "active": true
+    },
+    "sgdgr_g100_e19_g100_p01": {
+      "delta": 14.915071036608424,
+      "active": true
+    },
+    "sgdgr_g100_e20_g100_p00": {
+      "delta": 14.913209692109376,
+      "active": true
+    },
+    "sgdgr_g100_e20_g100_p01": {
+      "delta": 14.914259069017135,
+      "active": true
+    },
+    "sgdgr_g100_e40_g100_p00": {
+      "delta": 14.913970353780314,
+      "active": true
+    },
+    "sgdgr_g100_e40_g100_p01": {
+      "delta": 14.915563253336586,
+      "active": true
+    },
+    "sgdgr_g100_e83_g100_p00": {
+      "delta": 14.9157193930223,
+      "active": true
+    },
+    "sgdgr_g100_e83_g100_p01": {
+      "delta": 14.915061030362267,
+      "active": true
+    },
+    "sgdgr_g20_e10_g020_p00": {
+      "delta": 14.911270631477237,
+      "active": true
+    },
+    "sgdgr_g20_e10_g020_p01": {
+      "delta": 14.910340684931725,
+      "active": true
+    },
+    "sgdgr_g20_e10_g020_p02": {
+      "delta": 14.91087114624679,
+      "active": true
+    },
+    "sgdgr_g20_e10_g020_p03": {
+      "delta": 14.913967854809016,
+      "active": true
+    },
+    "sgdgr_g20_e10_g020_p04": {
+      "delta": 14.910171987023205,
+      "active": true
+    },
+    "sgdgr_g20_e10_g020_p05": {
+      "delta": 14.900151867419481,
+      "active": true
+    },
+    "sgdgr_g20_e10_g020_p06": {
+      "delta": 14.91495561337797,
+      "active": true
+    },
+    "sgdgr_g20_e10_g020_p07": {
+      "delta": 14.910100273322314,
+      "active": true
+    },
+    "sgdgr_g20_e10_g020_p08": {
+      "delta": 14.911508713383228,
+      "active": true
+    },
+    "sgdgr_g20_e10_g020_p09": {
+      "delta": 14.914656575769186,
+      "active": true
+    },
+    "sgdgr_g20_e20_g020_p00": {
+      "delta": 14.911918902536854,
+      "active": true
+    },
+    "sgdgr_g20_e20_g020_p01": {
+      "delta": 14.90538860205561,
+      "active": true
+    },
+    "sgdgr_g20_e20_g020_p02": {
+      "delta": 14.910591827705503,
+      "active": true
+    },
+    "sgdgr_g20_e20_g020_p03": {
+      "delta": 14.910544510930777,
+      "active": true
+    },
+    "sgdgr_g20_e20_g020_p04": {
+      "delta": 14.843028910458088,
+      "active": true
+    },
+    "sgdgr_g20_e20_g020_p05": {
+      "delta": 14.914036991307512,
+      "active": true
+    },
+    "sgdgr_g20_e20_g020_p06": {
+      "delta": 14.910902226343751,
+      "active": true
+    },
+    "sgdgr_g20_e20_g020_p07": {
+      "delta": 14.90288395062089,
+      "active": true
+    },
+    "sgdgr_g20_e20_g020_p08": {
+      "delta": 14.895258387550712,
+      "active": true
+    },
+    "sgdgr_g20_e20_g020_p09": {
+      "delta": 14.902072173543274,
+      "active": true
+    },
+    "sgdgr_g20_e40_g020_p00": {
+      "delta": 14.915358044207096,
+      "active": true
+    },
+    "sgdgr_g20_e40_g020_p01": {
+      "delta": 14.912400777917355,
+      "active": true
+    },
+    "sgdgr_g20_e40_g020_p02": {
+      "delta": 14.914100539172068,
+      "active": true
+    },
+    "sgdgr_g20_e40_g020_p03": {
+      "delta": 14.911966046318412,
+      "active": true
+    },
+    "sgdgr_g20_e40_g020_p04": {
+      "delta": 14.913757976144552,
+      "active": true
+    },
+    "sgdgr_g20_e40_g020_p05": {
+      "delta": 16.654738903045654,
+      "active": true
+    },
+    "sgdgr_g20_e40_g020_p06": {
+      "delta": 14.914457743056118,
+      "active": true
+    },
+    "sgdgr_g20_e40_g020_p07": {
+      "delta": 14.915353158809012,
+      "active": true
+    },
+    "sgdgr_g20_e40_g020_p08": {
+      "delta": 14.903251531533897,
+      "active": true
+    },
+    "sgdgr_g20_e40_g020_p09": {
+      "delta": 15.094079494476318,
+      "active": true
+    },
+    "sgdgr_g20_e83_g020_p00": {
+      "delta": 14.915686255990295,
+      "active": true
+    },
+    "sgdgr_g20_e83_g020_p01": {
+      "delta": 14.915224478347227,
+      "active": true
+    },
+    "sgdgr_g20_e83_g020_p02": {
+      "delta": 14.915511529979995,
+      "active": true
+    },
+    "sgdgr_g20_e83_g020_p03": {
+      "delta": 14.915362214698689,
+      "active": true
+    },
+    "sgdgr_g20_e83_g020_p04": {
+      "delta": 14.913679699646309,
+      "active": true
+    },
+    "sgdgr_g20_e83_g020_p05": {
+      "delta": 14.915305974078365,
+      "active": true
+    },
+    "sgdgr_g20_e83_g020_p06": {
+      "delta": 14.915681726553885,
+      "active": true
+    },
+    "sgdgr_g20_e83_g020_p07": {
+      "delta": 14.915390574577032,
+      "active": true
+    },
+    "sgdgr_g20_e83_g020_p08": {
+      "delta": 14.91356824315153,
+      "active": true
+    },
+    "sgdgr_g20_e83_g020_p09": {
+      "delta": 18.78656530380249,
+      "active": true
+    },
+    "sgdgr_g200_e10_g200_p00": {
+      "delta": 14.911862261593342,
+      "active": true
+    },
+    "sgdgr_g200_e20_g200_p00": {
+      "delta": 14.9141395741608,
+      "active": true
+    },
+    "sgdgr_g200_e40_g200_p00": {
+      "delta": 14.915626183035783,
+      "active": true
+    },
+    "sgdgr_g200_e83_g200_p00": {
+      "delta": 14.915748478211754,
+      "active": true
+    },
+    "sgdgr_g40_e10_g040_p00": {
+      "delta": 14.908798336517066,
+      "active": true
+    },
+    "sgdgr_g40_e10_g040_p01": {
+      "delta": 14.909325966145843,
+      "active": true
+    },
+    "sgdgr_g40_e10_g040_p02": {
+      "delta": 14.907521028071642,
+      "active": true
+    },
+    "sgdgr_g40_e10_g040_p03": {
+      "delta": 14.912544304970652,
+      "active": true
+    },
+    "sgdgr_g40_e10_g040_p04": {
+      "delta": 14.912715542363003,
+      "active": true
+    },
+    "sgdgr_g40_e20_g040_p00": {
+      "delta": 14.912167947739363,
+      "active": true
+    },
+    "sgdgr_g40_e20_g040_p01": {
+      "delta": 14.961621761322021,
+      "active": true
+    },
+    "sgdgr_g40_e20_g040_p02": {
+      "delta": 14.91201153001748,
+      "active": true
+    },
+    "sgdgr_g40_e20_g040_p03": {
+      "delta": 14.910809346009046,
+      "active": true
+    },
+    "sgdgr_g40_e20_g040_p04": {
+      "delta": 14.906388230621815,
+      "active": true
+    },
+    "sgdgr_g40_e40_g040_p00": {
+      "delta": 14.914396553416736,
+      "active": true
+    },
+    "sgdgr_g40_e40_g040_p01": {
+      "delta": 19.83636236190796,
+      "active": true
+    },
+    "sgdgr_g40_e40_g040_p02": {
+      "delta": 14.914107560529374,
+      "active": true
+    },
+    "sgdgr_g40_e40_g040_p03": {
+      "delta": 14.905600979924202,
+      "active": true
+    },
+    "sgdgr_g40_e40_g040_p04": {
+      "delta": 14.913846015231684,
+      "active": true
+    },
+    "sgdgr_g40_e50_g040_p00": {
+      "delta": 14.915646087771165,
+      "active": true
+    },
+    "sgdgr_g40_e50_g040_p01": {
+      "delta": 16.134198665618896,
+      "active": true
+    },
+    "sgdgr_g40_e50_g040_p02": {
+      "delta": 14.914149809163064,
+      "active": true
+    },
+    "sgdgr_g40_e50_g040_p03": {
+      "delta": 14.915584587011836,
+      "active": true
+    },
+    "sgdgr_g40_e50_g040_p04": {
+      "delta": 14.915187187958509,
+      "active": true
+    },
+    "sgdgr_g40_e83_g040_p00": {
+      "delta": 14.915751339103736,
+      "active": true
+    },
+    "sgdgr_g40_e83_g040_p01": {
+      "delta": 15.48047399520874,
+      "active": true
+    },
+    "sgdgr_g40_e83_g040_p02": {
+      "delta": 14.91538175669848,
+      "active": true
+    },
+    "sgdgr_g40_e83_g040_p03": {
+      "delta": 14.915540728339693,
+      "active": true
+    },
+    "sgdgr_g40_e83_g040_p04": {
+      "delta": 14.915534650237532,
+      "active": true
+    }
+  },
+  "n_adapters": 79,
+  "n_active": 79
+}

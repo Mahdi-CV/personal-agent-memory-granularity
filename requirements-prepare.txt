@@ -1,0 +1,5 @@
+# GPU-free layer (extract / split / dataset / serving-client). Runs anywhere,
+# including a laptop with no accelerator. Enforced by tests/test_import_layers.py.
+# Versions are the ones the committed results were produced with.
+pydantic==2.13.4
+PyYAML==6.0.3

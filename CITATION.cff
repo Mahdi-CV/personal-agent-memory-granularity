@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: >-
+  How Should a Personal Agent Store Its Facts? Granularity, Compute, and
+  Robustness in Parametric Memory
+message: Please cite the workshop paper if you use this code or result data.
+type: software
+authors:
+  - family-names: Ghodsi
+    given-names: Mahdi
+  - family-names: Devineni
+    given-names: Megha Sri Satya Sai
+  - family-names: Pandey
+    given-names: Chandra Shekhar
+license: MIT
+license-url: https://opensource.org/licenses/MIT
+keywords:
+  - personal agents
+  - parametric memory
+  - LoRA
+  - retrieval
+  - small language models
+  - memory granularity

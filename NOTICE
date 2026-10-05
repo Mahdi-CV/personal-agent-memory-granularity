@@ -1,0 +1,39 @@
+Third-party attributions
+========================
+
+TOFU
+----
+Pratyush Maini, Zhili Feng, Avi Schwarzschild, Zachary C. Lipton,
+J. Zico Kolter.
+
+Paper: https://arxiv.org/abs/2401.06121
+Dataset: https://huggingface.co/datasets/locuslab/TOFU
+License: MIT
+
+Used as the evaluation dataset. The dataset itself is not redistributed.
+
+Qwen3-4B-Instruct-2507
+----------------------
+Qwen Team, Alibaba Cloud.
+
+Model: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+
+Used as the base model. Model weights are not redistributed.
+
+Doc-to-LoRA
+-----------
+Rujikorn Charakorn, Edoardo Cetin, Shinnosuke Uesaka,
+Robert Tjarko Lange.
+
+Paper: https://arxiv.org/abs/2602.15902
+Code: https://github.com/SakanaAI/doc-to-lora
+Weights: https://huggingface.co/SakanaAI/doc-to-lora
+
+Used for the compiled-adapter arm. Source and checkpoint weights are not
+redistributed.
+
+vLLM, PEFT, Transformers, Datasets, Accelerate, and ROCm
+--------------------------------------------------------
+These projects are used for serving, training, data loading, and GPU execution
+under their respective published licenses. Exact versions are listed in
+`docs/ENVIRONMENT.md`.

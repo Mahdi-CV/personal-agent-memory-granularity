@@ -1,0 +1,445 @@
+{
+  "base_model": "Qwen3-4B-Instruct-2507",
+  "n_items": 200,
+  "paraphrase_drop": {
+    "base": {
+      "q": 0.049723756906077346,
+      "pq": 0.0718232044198895,
+      "drop": -0.022099447513812154,
+      "n_paired": 181,
+      "lost": 2,
+      "gained": 6,
+      "p": 0.2890625
+    },
+    "sgd7": {
+      "q": 0.9060773480662984,
+      "pq": 0.5469613259668509,
+      "drop": 0.3591160220994475,
+      "n_paired": 181,
+      "lost": 70,
+      "gained": 5,
+      "p": 9.817755603717254e-16
+    },
+    "sgddp": {
+      "q": 0.3149171270718232,
+      "pq": 0.27624309392265195,
+      "drop": 0.03867403314917123,
+      "n_paired": 181,
+      "lost": 22,
+      "gained": 15,
+      "p": 0.3240086000878364
+    },
+    "d2l_pa": {
+      "q": 0.6022099447513812,
+      "pq": 0.5414364640883977,
+      "drop": 0.06077348066298349,
+      "n_paired": 181,
+      "lost": 21,
+      "gained": 10,
+      "p": 0.07075554598122835
+    },
+    "d2l_all": {
+      "q": 0.11049723756906077,
+      "pq": 0.13812154696132597,
+      "drop": -0.027624309392265206,
+      "n_paired": 181,
+      "lost": 7,
+      "gained": 12,
+      "p": 0.359283447265625
+    },
+    "retrieval": {
+      "q": 0.7292817679558011,
+      "pq": 0.6132596685082873,
+      "drop": 0.11602209944751385,
+      "n_paired": 181,
+      "lost": 34,
+      "gained": 13,
+      "p": 0.0030876764615186403
+    }
+  },
+  "between_arm": {
+    "A  SGD7 vs D2L-perauthor|q": {
+      "x": "sgd7",
+      "y": "d2l_pa",
+      "x_acc": 0.9060773480662984,
+      "y_acc": 0.6022099447513812,
+      "net_favouring_x": 55,
+      "n_paired": 181,
+      "lost": 61,
+      "gained": 6,
+      "p": 1.4944372779199244e-12
+    },
+    "A' SGD-dp vs D2L-perauthor|q": {
+      "x": "sgddp",
+      "y": "d2l_pa",
+      "x_acc": 0.3149171270718232,
+      "y_acc": 0.6022099447513812,
+      "net_favouring_x": -52,
+      "n_paired": 181,
+      "lost": 12,
+      "gained": 64,
+      "p": 1.0023457813247953e-09
+    },
+    "B  D2L-perauthor vs retrieval|q": {
+      "x": "d2l_pa",
+      "y": "retrieval",
+      "x_acc": 0.6022099447513812,
+      "y_acc": 0.7292817679558011,
+      "net_favouring_x": -23,
+      "n_paired": 181,
+      "lost": 20,
+      "gained": 43,
+      "p": 0.005152397042092063
+    },
+    "D  SGD7 vs SGD-downproj|q": {
+      "x": "sgd7",
+      "y": "sgddp",
+      "x_acc": 0.9060773480662984,
+      "y_acc": 0.3149171270718232,
+      "net_favouring_x": 107,
+      "n_paired": 181,
+      "lost": 110,
+      "gained": 3,
+      "p": 4.633363741607924e-29
+    },
+    "D2L-perauthor vs D2L-all200|q": {
+      "x": "d2l_pa",
+      "y": "d2l_all",
+      "x_acc": 0.6022099447513812,
+      "y_acc": 0.11049723756906077,
+      "net_favouring_x": 89,
+      "n_paired": 181,
+      "lost": 91,
+      "gained": 2,
+      "p": 8.829183686723235e-25
+    },
+    "SGD7 vs retrieval|q": {
+      "x": "sgd7",
+      "y": "retrieval",
+      "x_acc": 0.9060773480662984,
+      "y_acc": 0.7292817679558011,
+      "net_favouring_x": 32,
+      "n_paired": 181,
+      "lost": 43,
+      "gained": 11,
+      "p": 1.4013057456185862e-05
+    },
+    "A  SGD7 vs D2L-perauthor|pq": {
+      "x": "sgd7",
+      "y": "d2l_pa",
+      "x_acc": 0.5469613259668509,
+      "y_acc": 0.5414364640883977,
+      "net_favouring_x": 1,
+      "n_paired": 181,
+      "lost": 35,
+      "gained": 34,
+      "p": 1.0
+    },
+    "A' SGD-dp vs D2L-perauthor|pq": {
+      "x": "sgddp",
+      "y": "d2l_pa",
+      "x_acc": 0.27624309392265195,
+      "y_acc": 0.5414364640883977,
+      "net_favouring_x": -48,
+      "n_paired": 181,
+      "lost": 15,
+      "gained": 63,
+      "p": 3.748661169432698e-08
+    },
+    "B  D2L-perauthor vs retrieval|pq": {
+      "x": "d2l_pa",
+      "y": "retrieval",
+      "x_acc": 0.5414364640883977,
+      "y_acc": 0.6132596685082873,
+      "net_favouring_x": -13,
+      "n_paired": 181,
+      "lost": 26,
+      "gained": 39,
+      "p": 0.13603239487789212
+    },
+    "D  SGD7 vs SGD-downproj|pq": {
+      "x": "sgd7",
+      "y": "sgddp",
+      "x_acc": 0.5469613259668509,
+      "y_acc": 0.27624309392265195,
+      "net_favouring_x": 49,
+      "n_paired": 181,
+      "lost": 61,
+      "gained": 12,
+      "p": 4.802196531399105e-09
+    },
+    "D2L-perauthor vs D2L-all200|pq": {
+      "x": "d2l_pa",
+      "y": "d2l_all",
+      "x_acc": 0.5414364640883977,
+      "y_acc": 0.13812154696132597,
+      "net_favouring_x": 73,
+      "n_paired": 181,
+      "lost": 76,
+      "gained": 3,
+      "p": 2.72109334305444e-19
+    },
+    "SGD7 vs retrieval|pq": {
+      "x": "sgd7",
+      "y": "retrieval",
+      "x_acc": 0.5469613259668509,
+      "y_acc": 0.6132596685082873,
+      "net_favouring_x": -12,
+      "n_paired": 181,
+      "lost": 29,
+      "gained": 41,
+      "p": 0.18821620302302766
+    }
+  },
+  "interference": {
+    "base": {
+      "near": 0.11931818181818182,
+      "near_delta": 0.0,
+      "near_p": 1.0,
+      "far": 1.0,
+      "far_delta": 0.0,
+      "far_p": 1.0,
+      "near_test": {
+        "n_paired": 176,
+        "lost": 0,
+        "gained": 0,
+        "p": 1.0
+      },
+      "far_test": {
+        "n_paired": 30,
+        "lost": 0,
+        "gained": 0,
+        "p": 1.0
+      }
+    },
+    "sgd7": {
+      "near": 0.08522727272727272,
+      "near_delta": -0.0340909090909091,
+      "near_p": 0.1795654296875,
+      "far": 1.0,
+      "far_delta": 0.0,
+      "far_p": 1.0,
+      "near_test": {
+        "n_paired": 176,
+        "lost": 10,
+        "gained": 4,
+        "p": 0.1795654296875
+      },
+      "far_test": {
+        "n_paired": 30,
+        "lost": 0,
+        "gained": 0,
+        "p": 1.0
+      }
+    },
+    "sgddp": {
+      "near": 0.09659090909090909,
+      "near_delta": -0.022727272727272735,
+      "near_p": 0.3876953125,
+      "far": 0.9666666666666667,
+      "far_delta": -0.033333333333333326,
+      "far_p": 1.0,
+      "near_test": {
+        "n_paired": 176,
+        "lost": 8,
+        "gained": 4,
+        "p": 0.3876953125
+      },
+      "far_test": {
+        "n_paired": 30,
+        "lost": 1,
+        "gained": 0,
+        "p": 1.0
+      }
+    },
+    "d2l_pa": {
+      "near": 0.09090909090909091,
+      "near_delta": -0.02840909090909091,
+      "near_p": 0.1796875,
+      "far": 1.0,
+      "far_delta": 0.0,
+      "far_p": 1.0,
+      "near_test": {
+        "n_paired": 176,
+        "lost": 7,
+        "gained": 2,
+        "p": 0.1796875
+      },
+      "far_test": {
+        "n_paired": 30,
+        "lost": 0,
+        "gained": 0,
+        "p": 1.0
+      }
+    },
+    "d2l_all": {
+      "near": 0.08522727272727272,
+      "near_delta": -0.0340909090909091,
+      "near_p": 0.109375,
+      "far": 0.9666666666666667,
+      "far_delta": -0.033333333333333326,
+      "far_p": 1.0,
+      "near_test": {
+        "n_paired": 176,
+        "lost": 8,
+        "gained": 2,
+        "p": 0.109375
+      },
+      "far_test": {
+        "n_paired": 30,
+        "lost": 1,
+        "gained": 0,
+        "p": 1.0
+      }
+    },
+    "retrieval": {
+      "near": 0.06818181818181818,
+      "near_delta": -0.051136363636363646,
+      "near_p": 0.00390625,
+      "far": 1.0,
+      "far_delta": 0.0,
+      "far_p": 1.0,
+      "near_test": {
+        "n_paired": 176,
+        "lost": 9,
+        "gained": 0,
+        "p": 0.00390625
+      },
+      "far_test": {
+        "n_paired": 30,
+        "lost": 0,
+        "gained": 0,
+        "p": 1.0
+      }
+    }
+  },
+  "systems": {
+    "per_arm": {
+      "base": {
+        "mean_prompt_tokens_q": 57.605,
+        "mean_prompt_tokens_pq": 60.13
+      },
+      "sgd7": {
+        "mean_prompt_tokens_q": 57.605,
+        "mean_prompt_tokens_pq": 60.13
+      },
+      "sgddp": {
+        "mean_prompt_tokens_q": 57.605,
+        "mean_prompt_tokens_pq": 60.13
+      },
+      "d2l_pa": {
+        "mean_prompt_tokens_q": 57.605,
+        "mean_prompt_tokens_pq": 60.13
+      },
+      "d2l_all": {
+        "mean_prompt_tokens_q": 57.605,
+        "mean_prompt_tokens_pq": 60.13
+      },
+      "retrieval": {
+        "mean_prompt_tokens_q": 268.835,
+        "mean_prompt_tokens_pq": 286.575
+      }
+    },
+    "d2l_build": {
+      "author00": {
+        "path": "/work/d2l_exp/adapters/author00",
+        "doc_tokens": 632,
+        "rank": 16,
+        "lora_alpha": 724.0773439350247,
+        "n_tensors": 72,
+        "build_seconds": 7.531,
+        "bytes": 28320992
+      },
+      "author01": {
+        "path": "/work/d2l_exp/adapters/author01",
+        "doc_tokens": 738,
+        "rank": 16,
+        "lora_alpha": 724.0773439350247,
+        "n_tensors": 72,
+        "build_seconds": 0.879,
+        "bytes": 28320992
+      },
+      "author02": {
+        "path": "/work/d2l_exp/adapters/author02",
+        "doc_tokens": 799,
+        "rank": 16,
+        "lora_alpha": 724.0773439350247,
+        "n_tensors": 72,
+        "build_seconds": 0.634,
+        "bytes": 28320992
+      },
+      "author03": {
+        "path": "/work/d2l_exp/adapters/author03",
+        "doc_tokens": 717,
+        "rank": 16,
+        "lora_alpha": 724.0773439350247,
+        "n_tensors": 72,
+        "build_seconds": 0.835,
+        "bytes": 28320992
+      },
+      "author04": {
+        "path": "/work/d2l_exp/adapters/author04",
+        "doc_tokens": 1052,
+        "rank": 16,
+        "lora_alpha": 724.0773439350247,
+        "n_tensors": 72,
+        "build_seconds": 0.618,
+        "bytes": 28320992
+      },
+      "author05": {
+        "path": "/work/d2l_exp/adapters/author05",
+        "doc_tokens": 829,
+        "rank": 16,
+        "lora_alpha": 724.0773439350247,
+        "n_tensors": 72,
+        "build_seconds": 0.853,
+        "bytes": 28320992
+      },
+      "author06": {
+        "path": "/work/d2l_exp/adapters/author06",
+        "doc_tokens": 632,
+        "rank": 16,
+        "lora_alpha": 724.0773439350247,
+        "n_tensors": 72,
+        "build_seconds": 0.643,
+        "bytes": 28320992
+      },
+      "author07": {
+        "path": "/work/d2l_exp/adapters/author07",
+        "doc_tokens": 596,
+        "rank": 16,
+        "lora_alpha": 724.0773439350247,
+        "n_tensors": 72,
+        "build_seconds": 0.818,
+        "bytes": 28320992
+      },
+      "author08": {
+        "path": "/work/d2l_exp/adapters/author08",
+        "doc_tokens": 666,
+        "rank": 16,
+        "lora_alpha": 724.0773439350247,
+        "n_tensors": 72,
+        "build_seconds": 0.602,
+        "bytes": 28320992
+      },
+      "author09": {
+        "path": "/work/d2l_exp/adapters/author09",
+        "doc_tokens": 642,
+        "rank": 16,
+        "lora_alpha": 724.0773439350247,
+        "n_tensors": 72,
+        "build_seconds": 0.791,
+        "bytes": 28320992
+      },
+      "all200": {
+        "path": "/work/d2l_exp/adapters/all200",
+        "doc_tokens": 7303,
+        "rank": 16,
+        "lora_alpha": 724.0773439350247,
+        "n_tensors": 72,
+        "build_seconds": 0.891,
+        "bytes": 28320992
+      }
+    }
+  }
+}

@@ -1,0 +1,237 @@
+% NeurIPS 2026 paper checklist.
+%
+% Kept in a SEPARATE file on purpose. The camera-ready workshop limit is seven
+% content pages
+% against the body only; the checklist is submitted alongside and must not be
+% allowed to push the body over. Compile standalone with build_checklist.sh, or
+% \input it after \bibliography when the venue asks for a single file.
+%
+% Every answer below points at the section that actually contains the evidence.
+% "Yes" is used only where the PAPER reports the thing, not where we merely
+% could have. Where evidence exists only in artifacts or code and not in the
+% manuscript, that is stated explicitly in the justification.
+
+\begin{enumerate}
+
+\item {\bf Claims}
+    \item[] Question: Do the main claims made in the abstract and introduction
+    accurately reflect the paper's contributions and scope?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: The abstract and the three contribution bullets
+    (\S\ref{sec:intro}) each name the measurement that backs them: the
+    granularity sweep in three adapter-construction regimes
+    (\S\ref{sec:curve}), the storage/construction/routing accounting
+    (\S\ref{sec:cost}), and the five-way operating-point comparison including
+    full context and top-5 retrieval (\S\ref{sec:operating}). Scope is stated in
+    the same sentences: one 4B model, one \NPerArm{}-fact TOFU memory,
+    per-adapter rank fixed at 16. Where the abstract says the monotonic
+    original-question decline is not observed under equal per-fact exposure, the
+    text states that this is an unresolved comparison rather than an equivalence
+    result (\S\ref{sec:curve}). The abstract closes by declining to name a
+    winner, which matches \S\ref{sec:operating}.
+
+\item {\bf Limitations}
+    \item[] Question: Does the paper discuss the limitations of the work
+    performed by the authors?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: \S\ref{sec:limits} is four dedicated paragraphs:
+    routing is unusually easy on TOFU and our routing numbers are an upper
+    bound; a single base model, target-module set, rank and learning rate, with
+    no capacity sweep, so no claim about how these curves move with rank; the
+    construction budget is part of the result, so a granularity sweep does not
+    measure adapter capacity on its own and we tested two points in the
+    budget/exposure space rather than the space itself, with scheduler horizon
+    not separated from exposure in the equal-exposure arm; and the in-context
+    comparison charges top-5 retrieval for prompt tokens but not for index,
+    corpus, or retriever infrastructure, does not vary corpus scale (citing a
+    paper that reports the opposite ordering at a smaller corpus), used one
+    fixed full-context ordering so position is confounded with item difficulty,
+    and measures factual recall only, since TOFU holds authorial voice constant.
+    The routing tax is explicitly reported as unresolved rather than zero,
+    because it falls below the engine's own reproducibility floor
+    (\S\ref{sec:cost}).
+
+\item {\bf Theory assumptions and proofs}
+    \item[] Question: For each theoretical result, does the paper provide the
+    full set of assumptions and a complete (and correct) proof?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: The paper is purely empirical. It states no theorem
+    and derives no analytical result.
+
+\item {\bf Experimental result reproducibility}
+    \item[] Question: Does the paper fully disclose all the information needed
+    to reproduce the main experimental results?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: \S\ref{sec:design} gives the dataset and exact config
+    (TOFU \texttt{forget10\_perturbed}), the partition rule (author-aligned
+    20-fact blocks packed in ascending order, which is deterministic), the base
+    model, rank, learning rate, $\alpha$, target module, optimizer, batch size
+    and gradient accumulation, the grading rule and threshold, the pairing and
+    test procedure, and the serving stack with versions. Both gradient
+    construction regimes are specified separately: the fixed-update regime
+    (exactly \SeedSteps{} optimizer updates per adapter, RNGs reset to seed
+    \SeedSeed{} immediately before LoRA initialization, termination verified by
+    reading \texttt{global\_step} back) and the equal-exposure regime
+    (\ExpEpochs{} epochs per partition, trained independently each with its own
+    scheduler horizon, giving \ExpGTwentySteps{}--\ExpGTwoHundredSteps{}
+    updates). Two controls needed to reproduce the result honestly are also
+    described: the per-document truncation gate (\S\ref{sec:design}) and the
+    log-probability activity gate (\S\ref{sec:reliability}). Caveats stated in
+    the paper: the serving stack is not bitwise reproducible under concurrency
+    (\S\ref{sec:cost}), so exact per-item replication is not expected, and the
+    full-context arm required a server configured with a 16{,}384-token context
+    window rather than the configuration used by the other arms.
+
+\item {\bf Open access to data and code}
+    \item[] Question: Does the paper provide open access to the data and code?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: The camera-ready release includes the experiment
+    scripts, frozen per-item results, generated tables and figures, environment
+    details, and step-by-step reproduction instructions. The public TOFU
+    dataset and Qwen base model are cited at their points of use.
+
+\item {\bf Experimental setting/details}
+    \item[] Question: Does the paper specify all the training and test details
+    needed to understand the results?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: \S\ref{sec:design} specifies rank 16, the MLP-side
+    target module (\texttt{down\_proj}), the learning rate ($\LearningRate{}$)
+    and $\alpha$ (\LoraAlpha{}) held constant across the ladder, the oracle and
+    predicted routing procedures, the grading threshold of 0.7, and
+    $n=\NGradable{}$ of \NPerArm{} after dropping ungradable items pairwise. The
+    two granularity regimes are distinguished explicitly, since optimizer
+    updates and per-fact exposure cannot both be held fixed while partition size
+    varies: fixed-update (\SeedSteps{} updates per adapter) and equal-exposure
+    (\ExpEpochs{} epochs per partition). The operating-point comparison of
+    \S\ref{sec:operating} uses a separate step-matched gradient arm
+    (\SgdOptSteps{} steps per adapter), and the paper states that its numbers
+    are not interchangeable with the granularity regimes.
+
+\item {\bf Experiment statistical significance}
+    \item[] Question: Does the paper report error bars suitably and correctly
+    defined or other appropriate information about the statistical significance
+    of the experiments?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Because the same \NPerArm{} items recur at every
+    point on the ladder, comparisons are paired at the item level and tested
+    with exact McNemar on discordant pairs. The end-to-end $20\to\NPerArm{}$
+    paired $p$-value is reported for each of the three construction regimes, on
+    both original and paraphrased questions, in the table inside
+    Figure~\ref{fig:granularity}, and lost/gained counts are given in the text
+    (\S\ref{sec:design}, \S\ref{sec:curve}). Interval types are distinguished:
+    granularity-curve aggregate intervals use an item-clustered bootstrap that
+    resamples items and carries all of an item's measurements together, whereas
+    single-arm binomial intervals, including the full-context 95\% interval in
+    \S\ref{sec:operating}, are Wilson intervals.
+    Figure~\ref{fig:granularity} plots point estimates
+    without error bars, with significance carried by the paired tests in the
+    accompanying table rather than by interval overlap. The paper also states
+    where a difference is \emph{not} resolvable rather than reporting it as an
+    effect: the 100-to-\NPerArm{} compiled step
+    ($p=\StepHundredtoTwoHundredP{}$), every equal-exposure original-question
+    comparison against 20 facts per adapter (all $p\ge\ExpQPMin{}$, described as
+    unresolved rather than as equivalence), and the routing tax, which sits
+    below the engine's reproducibility floor.
+
+\item {\bf Experiments compute resources}
+    \item[] Question: Does the paper provide sufficient information on the
+    computer resources needed to reproduce the experiments?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: \S\ref{sec:design} states one MI300X GPU running vLLM
+    0.24.0 on ROCm 7.2.3 with a 4B base model. Construction cost, which is the
+    dominant compute term and is itself a reported result, is given per adapter
+    in the prose of \S\ref{sec:operating} (\DtwoLBuildPer{}\,s compiled against
+    \SgdBuildPer{}\,s gradient-trained), whereas Table~\ref{tab:operating}
+    reports the corresponding ten-adapter bank totals (\GTwentyBuild{}\,s
+    compiled against \SgdBuildTotal{}\,s gradient-trained); per-granularity
+    compiled build seconds appear in the table
+    inside Figure~\ref{fig:granularity}. Evaluation cost is not separately
+    tabulated, and we report prompt tokens rather than wall-clock time for the
+    in-context arms, since the full-context arm ran under a different server
+    configuration and its runtime is not comparable to the others.
+
+\item {\bf Code of ethics}
+    \item[] Question: Does the research conducted in the paper conform, in every
+    respect, with the NeurIPS Code of Ethics?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: The study uses a public synthetic benchmark of
+    fictitious author biographies and a public base model. No human subjects, no
+    personal or private data, and no annotator labour are involved.
+
+\item {\bf Broader impacts}
+    \item[] Question: Does the paper discuss both potential positive societal
+    impacts and negative societal impacts of the work performed?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: The work is a measurement study of where a personal
+    agent should store facts. It introduces no new model, capability, or
+    artifact for release. We note that the setting concerns private user data,
+    but our results are about how finely a memory is partitioned and how the
+    adapters are constructed, not about whether stored information can be
+    recovered or removed; the paper makes no privacy or unlearning claim, and we
+    do not consider the measurement itself to carry a distinct societal risk.
+
+\item {\bf Safeguards}
+    \item[] Question: Does the paper describe safeguards that have been put in
+    place for responsible release of data or models that have a high risk for
+    misuse?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: No data, model, or scraped corpus is released with
+    this submission, and the adapters trained here encode only fictitious
+    biographies from a public benchmark, so there is no misuse surface to guard.
+
+\item {\bf Licenses for existing assets}
+    \item[] Question: Are the creators or original owners of assets used in the
+    paper properly credited and are the license and terms of use explicitly
+    mentioned and properly respected?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Every asset used is cited at the point of use in
+    \S\ref{sec:design}: TOFU~\citep{tofu} for the data, Qwen3-4B-Instruct-2507
+    base~\citep{qwen3,qwen3-4b-2507} for the model, the document-to-LoRA
+    hypernetwork~\citep{d2l} for the compiled generator, LoRA~\citep{lora} for
+    the gradient arm, and retrieval-augmented generation~\citep{rag} for the
+    retrieval arm. Note honestly: individual license names and versions are not
+    printed in the manuscript; all assets used are publicly released and used
+    within their published terms, and license details will accompany the code
+    release.
+
+\item {\bf New assets}
+    \item[] Question: Are new assets introduced in the paper well documented and
+    is the documentation provided alongside the assets?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: This submission releases no new asset. The adapters
+    built for the study are experimental artifacts, not a contributed model.
+
+\item {\bf Crowdsourcing and research with human subjects}
+    \item[] Question: For crowdsourcing experiments and research with human
+    subjects, does the paper include the full text of instructions given to
+    participants and screenshots, if applicable, as well as details about
+    compensation?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: No crowdsourcing and no human subjects. The
+    paraphrases used in the evaluation are the human-written paraphrases shipped
+    with the TOFU benchmark, not collected by us.
+
+\item {\bf Institutional review board (IRB) approvals or equivalent for research
+with human subjects}
+    \item[] Question: Does the paper describe potential risks incurred by study
+    participants, whether such risks were disclosed to the subjects, and whether
+    Institutional Review Board (IRB) approvals (or an equivalent approval/review
+    based on the requirements of your country or institution) were obtained?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: No study participants and no human-subjects research,
+    so no review was required.
+
+\item {\bf Declaration of LLM usage}
+    \item[] Question: Does the paper describe the usage of LLMs if it is an
+    important, original, or non-standard component of the core methods in this
+    research?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Language models are the object of study, and every
+    such use is described in \S\ref{sec:design}: a Qwen3-4B-Instruct-2507 base as the
+    model under test, a document-to-LoRA hypernetwork as the compiled-memory
+    generator, gradient-trained LoRA for the gradient arm, and the same base
+    prompted with
+    retrieved or full-corpus context for the in-context arms. Grading is a
+    deterministic token-recall rule against the gold answer, not an LLM judge.
+
+\end{enumerate}

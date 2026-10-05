@@ -1,0 +1,15 @@
+# GPU layer (LoRA training). Install on an MI300X host, on top of a ROCm PyTorch.
+#
+# torch is deliberately absent. Every result in results/ was produced against
+# torch 2.11.0+gitd0c8b1f, a ROCm build that ships inside the container image and
+# is NOT fetchable from PyPI. Installing a CUDA wheel here will silently give you
+# a different stack. Use the container described in docs/ENVIRONMENT.md.
+#
+# These are pinned to the exact versions the committed results were produced with.
+# Loosen them only if you are prepared to re-verify the numbers.
+transformers==5.12.1
+peft==0.19.1
+trl==1.10.0
+datasets==5.0.0
+accelerate==1.14.0
+safetensors==0.8.0

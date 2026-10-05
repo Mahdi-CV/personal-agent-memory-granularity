@@ -1,0 +1,15 @@
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{rrrrrrrcrr}
+\toprule
+& & \multicolumn{5}{c}{memory} & \multicolumn{2}{c}{paired step to next row} \\
+\cmidrule(lr){3-7}\cmidrule(lr){9-10}
+facts/ad. & ad. & orig.\ q & para.\ q & reten. & total MB & build s & & lost/gained & $p$ \\
+\midrule
+20 & 10 & 0.602 & 0.541 & 0.817 & 283.2 & 7.06 & & 58\,/\,10 & $2.4\times10^{-9}$ \\
+40 & 5 & 0.337 & 0.359 & 0.738 & 141.6 & 3.80 & & 41\,/\,3 & $1.6\times10^{-9}$ \\
+100 & 2 & 0.127 & 0.171 & 0.565 & 56.6 & 1.74 & & 9\,/\,7 & 0.804 \\
+200 & 1 & 0.116 & 0.144 & 0.619 & 28.3 & 1.14 & & -- & -- \\
+\midrule
+\multicolumn{8}{r}{\itshape end to end 20$\to$200} & 91\,/\,3 & $1.4\times10^{-23}$ \\
+\bottomrule
+\end{tabular}

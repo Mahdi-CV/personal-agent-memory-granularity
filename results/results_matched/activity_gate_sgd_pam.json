@@ -1,0 +1,45 @@
+{
+  "noise_floor": 0.0,
+  "adapters": {
+    "sgd_pam00": {
+      "delta": 14.91558506374713,
+      "active": true
+    },
+    "sgd_pam01": {
+      "delta": 14.91505150066223,
+      "active": true
+    },
+    "sgd_pam02": {
+      "delta": 14.915552646270953,
+      "active": true
+    },
+    "sgd_pam03": {
+      "delta": 14.915464218589477,
+      "active": true
+    },
+    "sgd_pam04": {
+      "delta": 14.914760412997566,
+      "active": true
+    },
+    "sgd_pam05": {
+      "delta": 16.01067876815796,
+      "active": true
+    },
+    "sgd_pam06": {
+      "delta": 14.915721538622165,
+      "active": true
+    },
+    "sgd_pam07": {
+      "delta": 14.915482570853783,
+      "active": true
+    },
+    "sgd_pam08": {
+      "delta": 14.911726074758917,
+      "active": true
+    },
+    "sgd_pam09": {
+      "delta": 18.848287105560303,
+      "active": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{rrrrrrrrrrr}
+\toprule
+& & \multicolumn{2}{c}{compiled} & \multicolumn{2}{c}{gradient, 249 updates} & \multicolumn{3}{c}{gradient, 83 epochs} & \multicolumn{2}{c}{bank} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-9}\cmidrule(lr){10-11}
+facts/ad. & ad. & orig. & para. & orig. & para. & orig. & para. & upd. & MB & comp.\ build s \\
+\midrule
+20 & 10 & 0.602 & 0.541 & 0.746 & 0.597 & 0.773 & 0.564 & 249 & 283.2 & 7.06 \\
+40 & 5 & 0.337 & 0.359 & 0.702 & 0.470 & 0.740 & 0.481 & 415 & 141.6 & 3.80 \\
+100 & 2 & 0.127 & 0.171 & 0.453 & 0.293 & 0.762 & 0.403 & 1079 & 56.6 & 1.74 \\
+200 & 1 & 0.116 & 0.144 & 0.354 & 0.298 & 0.757 & 0.387 & 2075 & 28.3 & 1.14 \\
+\midrule
+\multicolumn{2}{r}{\itshape $20\to200$, $p$} & $1.4\mathrm{e}{-23}$ & $5.2\mathrm{e}{-19}$ & $8.4\mathrm{e}{-17}$ & $9.0\mathrm{e}{-11}$ & 0.77 & $2.1\mathrm{e}{-5}$ & & & \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,12 @@
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{lrrrrr}
+\toprule
+memory organization & orig.\ q & para.\ q & prompt tok. & bank MB & bank build s \\
+\midrule
+Base (no memory) & 0.050 & 0.072 & 1$\times$ & 0 & 0 \\
+Full context (all \NPerArm{} facts) & 0.862 & 0.834 & 131.4$\times$ & 0 & 0 \\
+Top-5 retrieval & 0.729 & 0.613 & 4.67$\times$ & 0 & 0 \\
+Compiled, 20 f/ad. & 0.602 & 0.541 & 1$\times$ & 283.2 & 7.06 \\
+Gradient, 20 f/ad. & 0.779 & 0.597 & 1$\times$ & 283.2 & 1731.5 \\
+\bottomrule
+\end{tabular}

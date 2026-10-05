@@ -1,0 +1,77 @@
+{
+  "noise_floor": 0.0,
+  "adapters": {
+    "gr_g020_p00": {
+      "delta": 14.609240636229515,
+      "active": true
+    },
+    "gr_g020_p01": {
+      "delta": 18.125515088438988,
+      "active": true
+    },
+    "gr_g020_p02": {
+      "delta": 24.908348187804222,
+      "active": true
+    },
+    "gr_g020_p03": {
+      "delta": 17.7824574559927,
+      "active": true
+    },
+    "gr_g020_p04": {
+      "delta": 24.736568555235863,
+      "active": true
+    },
+    "gr_g020_p05": {
+      "delta": 19.683908566832542,
+      "active": true
+    },
+    "gr_g020_p06": {
+      "delta": 22.540258511900902,
+      "active": true
+    },
+    "gr_g020_p07": {
+      "delta": 20.272621259093285,
+      "active": true
+    },
+    "gr_g020_p08": {
+      "delta": 18.558076962828636,
+      "active": true
+    },
+    "gr_g020_p09": {
+      "delta": 21.548488721251488,
+      "active": true
+    },
+    "gr_g040_p00": {
+      "delta": 15.747143849730492,
+      "active": true
+    },
+    "gr_g040_p01": {
+      "delta": 16.682037457823753,
+      "active": true
+    },
+    "gr_g040_p02": {
+      "delta": 19.30580721795559,
+      "active": true
+    },
+    "gr_g040_p03": {
+      "delta": 16.717418774962425,
+      "active": true
+    },
+    "gr_g040_p04": {
+      "delta": 16.75506602227688,
+      "active": true
+    },
+    "gr_g100_p00": {
+      "delta": 17.851505383849144,
+      "active": true
+    },
+    "gr_g100_p01": {
+      "delta": 18.220634564757347,
+      "active": true
+    },
+    "gr_g200_p00": {
+      "delta": 15.613032445311546,
+      "active": true
+    }
+  }
+}
